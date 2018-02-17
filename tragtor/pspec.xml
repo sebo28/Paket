@@ -22,6 +22,7 @@
             <Dependency>ffmpeg</Dependency>
             <Dependency>id3lib</Dependency>
             <Dependency>id3v2</Dependency>
+            <Dependency>python-gtk</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/</Path>
