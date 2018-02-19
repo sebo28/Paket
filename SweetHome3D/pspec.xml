@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>SweetHome3D</Name>
+        <Homepage>http://www.sweethome3d.com</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>sweethome3D</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>An interior design application</Summary>
+        <Description>SweetHome3D is a free interior design application that helps you place your furniture on a house 2D plan, with a 3D preview.</Description>
+        <Archive sha1sum="d53acba42afbb22103872d07da628b8b2daef0dd" type="zip">http://sourceforge.net/projects/sweethome3d/files/SweetHome3D-source/SweetHome3D-5.7-src/SweetHome3D-5.7-src.zip</Archive>
+        <BuildDependencies>
+            <Dependency>ant</Dependency>
+            <Dependency>jdk7-openjdk</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>SweetHome3D</Name>
+        <RuntimeDependencies>
+            <Dependency>jre7-openjdk</Dependency>
+            <Dependency>gsettings-desktop-schemas</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/opt/SweetHome3D</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/SweetHome3D">SweetHome3D</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/sweethome3d.png">sweethome3d.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/SweetHome3D.desktop">SweetHome3D.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2018-02-19</Date>
+            <Version>5.7</Version>
+            <Comment>First release</Comment>
+            <Name>sebo28</Name>
+            <Email>pardus.sebo28@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
