@@ -11,9 +11,9 @@
         <License>GPLv2</License>
         <Icon>sweethome3D</Icon>
         <IsA>app:gui</IsA>
-        <Summary>An interior design application</Summary>
-        <Description>SweetHome3D is a free interior design application that helps you place your furniture on a house 2D plan, with a 3D preview.</Description>
-        <Archive sha1sum="d53acba42afbb22103872d07da628b8b2daef0dd" type="zip">http://sourceforge.net/projects/sweethome3d/files/SweetHome3D-source/SweetHome3D-5.7-src/SweetHome3D-5.7-src.zip</Archive>
+        <Summary>3 boyutlu bina tasarımı</Summary>
+        <Description>3 boyutlu bina tasarımı</Description>
+        <Archive sha1sum="0d6941b32c301a02d32b2161b1286a5356c890ad" type="targz">>https://sourceforge.net/projects/sweethome3d/files/SweetHome3D/SweetHome3D-5.7/SweetHome3D-5.7-linux-x64.tgz</Archive>
         <BuildDependencies>
             <Dependency>ant</Dependency>
             <Dependency>jdk7-openjdk</Dependency>
